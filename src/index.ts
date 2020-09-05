@@ -11,10 +11,8 @@ const auth: Plugin<{ enable: boolean }> = opts => {
 		dependencies: [] /* Request dependencies */,
 		exports: null /* Have something to export? */,
 		start: (
-			{ events, store, server },
-			[
-				/* dependencies requested will be passed here */
-			],
+			{ events, store, server, console },
+			[ /* dependencies requested will be passed here */ ],
 		) => {
 			if (opts.enable) {
 				/* do something cool */
